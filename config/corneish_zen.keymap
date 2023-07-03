@@ -21,15 +21,15 @@
                 default_layer {
                         label = "QWERTY";
 // -----------------------------------------------------------------------------------------
-// | TAB  |  Q  |  W  |  E  |  R  |  T  |||||  Y  |  U   |  I  |  O  |  P  | ALT  |
+// | TAB  |  Q  |  W  |  E  |  R  |  T  |||||  Y  |  U   |  I  |  O  |  P  | GUI  |
 // | ESC  |  A  |  S  |  D  |  F  |  G  |||||  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |||||  N  |  M   |  ,  |  .  |  /  | SHFT |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |||||  N  |  M   |  ,  |  .  |  /  | ALT |
 //                    | CTL | LWR | SPC ||||| ENT | RSE  | BSP |
 // -----------------------------------------------------------------------------------------
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp E     &kp R   &kp T      &kp Y   &kp U   &kp I     &kp O   &kp P    &kp LALT
+   &kp TAB   &kp Q &kp W &kp E     &kp R   &kp T      &kp Y   &kp U   &kp I     &kp O   &kp P    &kp LGUI
    &kp ESC   &kp A &kp S &kp D     &kp F   &kp G      &kp H   &kp J   &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C     &kp V   &kp B      &kp N   &kp M   &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+   &kp LSHFT &kp Z &kp X &kp C     &kp V   &kp B      &kp N   &kp M   &kp COMMA &kp DOT &kp FSLH &kp LALT
                          &kp LCTRL &mo NUM &kp SPACE  &kp RET &mo NAV &kp BSPC
                         >;
                 };
@@ -51,16 +51,16 @@
                 NAV {
                         label = "NAV";
 // -----------------------------------------------------------------------------------------
-// |     |     |     |     |     |     ||||| PGUP | HOME | UP  | END | INS |     |
-// |     |     |     |     |     |     ||||| PGDN | LEFT | DWN | RIT | DEL |     |
-// |     |     |     |     |     |     |||||      | CTRL | GUI | ALT |     |     |
-//                   |     |     |     |||||      |      |     |
+// |     |      |     |     |     |     ||||| PGUP | HOME | UP  | END | INS |     |
+// |     |      |     |     |     |     ||||| PGDN | LEFT | DWN | RIT | DEL |     |
+// |     | CTRL | GUI | ALT |     | BSPC|||||      |      |     |     |     |     |
+//                    |     | ALT |     |||||      |      |     |
 // -----------------------------------------------------------------------------------------
                         bindings = <
-   &trans &trans &trans &trans   &trans  &trans       &kp PG_UP &kp HOME  &kp UP   &kp END   &kp INS &trans
-   &trans &trans &trans &trans   &trans  &trans       &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp DEL &trans
-   &trans &trans &trans &trans   &trans  &trans       &trans    &kp LCTRL &kp LGUI &kp LALT  &trans  &trans
-                        &kp LALT &mo CFG &kp BSPC     &trans    &trans    &trans
+   &trans &trans    &trans   &trans   &trans  &trans       &kp PG_UP &kp HOME  &kp UP   &kp END   &kp INS &trans
+   &trans &trans    &trans   &trans   &trans  &trans       &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp DEL &trans
+   &trans &kp LCTRL &kp LGUI &kp LALT &trans  &kp BPSC     &trans    &kp LCTRL &kp LGUI &kp LALT  &trans  &trans
+                             &kp LALT &mo CFG &trans       &trans    &trans    &trans
                         >;
                 };
                 CFG {
