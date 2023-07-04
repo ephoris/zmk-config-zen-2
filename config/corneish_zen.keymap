@@ -22,28 +22,28 @@
                         label = "QWERTY";
 // -----------------------------------------------------------------------------------------
 // | TAB  |  Q  |  W  |  E  |  R  |  T  |||||  Y  |  U   |  I  |  O  |  P  | GUI |
-// | ESC  |  A  |  S  |  D  |  F  |  G  |||||  H  |  J   |  K  |  L  |  ;  |  '  |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |||||  N  |  M   |  ,  |  .  |  /  | ALT |
+// | ESC  |  A  |  S  |  D  |  F  |  G  |||||  H  |  J   |  K  |  L  |  ;  | ALT |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |||||  N  |  M   |  ,  |  .  |  /  | SHFT|
 //                    | CTL | LWR | SPC ||||| ENT | RSE  | BSP |
 // -----------------------------------------------------------------------------------------
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E     &kp R   &kp T      &kp Y   &kp U   &kp I     &kp O   &kp P    &kp LGUI
-   &kp ESC   &kp A &kp S &kp D     &kp F   &kp G      &kp H   &kp J   &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C     &kp V   &kp B      &kp N   &kp M   &kp COMMA &kp DOT &kp FSLH &kp LALT
+   &kp ESC   &kp A &kp S &kp D     &kp F   &kp G      &kp H   &kp J   &kp K     &kp L   &kp SEMI &kp LALT
+   &kp LSHFT &kp Z &kp X &kp C     &kp V   &kp B      &kp N   &kp M   &kp COMMA &kp DOT &kp FSLH &kp RSHFT
                          &kp LCTRL &mo NUM &kp SPACE  &kp RET &mo NAV &kp BSPC
                         >;
                 };
                 NUM {
                         label = "NUM";
 // -----------------------------------------------------------------------------------------
-// |     |  1  |  2  |  3  |  4  |  5  |||||  6  |  7  |  8  |  9  |  0  | BKSP |
-// |  `  |  !  |  @  |  #  |  $  |  %  |||||  ^  |  &  |  *  |  (  |  )  |  \   |
-// |     |  -  |  =  |  _  |  +  | CTRL|||||     |  {  |  }  |  [  |  ]  |      |
-//                   |     |     |     |||||     |     |     |
+// |     |  1  |  2  |  3  |  4  |  5  |||||  6  |  7  |  8  |  9  |  0  |  \  |
+// |  `  |  !  |  @  |  #  |  $  |  %  |||||  ^  |  &  |  *  |  (  |  )  |  '  |
+// |     |  -  |  =  |  _  |  +  | CTRL|||||     |  {  |  }  |  [  |  ]  |  "  |
+//                   |     |     |     |||||     | CFG |     |
 // -----------------------------------------------------------------------------------------
                         bindings = <
-   &trans    &kp N1    &kp N2    &kp N3    &kp N4   &kp N5       &kp N6    &kp N7   &kp N8   &kp N9   &kp N0   &kp BSPC
-   &kp GRAVE &kp EXCL  &kp AT    &kp HASH  &kp DLLR &kp PRCNT    &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR &kp BSLH
+   &trans    &kp N1    &kp N2    &kp N3    &kp N4   &kp N5       &kp N6    &kp N7   &kp N8   &kp N9   &kp N0   &kp BLSH
+   &kp GRAVE &kp EXCL  &kp AT    &kp HASH  &kp DLLR &kp PRCNT    &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR &kp SQT
    &trans    &kp MINUS &kp EQUAL &kp UNDER &kp PLUS &kp LCTRL    &trans    &kp LBRC &kp RBRC &kp LBKT &kp RBKT &trans
                                  &kp LALT  &trans   &trans       &trans    &mo CFG  &trans
                         >;
@@ -51,10 +51,10 @@
                 NAV {
                         label = "NAV";
 // -----------------------------------------------------------------------------------------
-// |     |      |     |     |     |     ||||| PGUP | HOME | UP  | END | INS |     |
-// |     |      |     |     |     |     ||||| PGDN | LEFT | DWN | RIT | DEL |     |
-// |     | CTRL | GUI | ALT |     | BSPC|||||      |      |     |     |     |     |
-//                    |     | ALT |     |||||      |      |     |
+// |     |     |     |     |     |     ||||| PGUP | HOME | UP  | END | INS |    |
+// |     |     |     |     |     |     ||||| PGDN | LEFT | DWN | RIT | DEL |    |
+// |     |     |     |     |     | BSPC|||||      |      |     |     |     |    |
+//                   | ALT | CFG |     |||||      |      |     |
 // -----------------------------------------------------------------------------------------
                         bindings = <
    &trans &trans    &trans   &trans   &trans  &trans       &kp PG_UP &kp HOME  &kp UP   &kp END   &kp INS &trans
