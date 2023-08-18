@@ -30,6 +30,22 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+        combo_num {
+            timeout-ms = <50>;
+            key-positions = <38 39>;
+            bindings = <&mo NUM>;
+        };
+        combo_nav {
+            timeout-ms = <50>;
+            key-positions = <39 40>;
+            bindings = <&mo NUM>;
+        };
+    };
+};
+
+/ {
     keymap {
         compatible = "zmk,keymap";
 
@@ -43,7 +59,8 @@
     // ├───────────────├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
         &kp LSHFT       &kp Z           &kp X           &kp C           &kp V           &kp B               &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &kp RSHFT
     // ╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
-                                                        &kp LALT        &kp LCTRL       &lt NUM SPACE       &lt NAV RET     &kp BSPC        &kp LGUI
+                                                        // &kp LALT        &kp LCTRL       &lt NUM SPACE       &lt NAV RET     &kp BSPC        &kp LGUI
+                                                        &kp LALT        &kp LCTRL       &kp SPACE           &kp RET         &kp BSPC        &kp LGUI
     //                                                 ╰───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────╯
             >;
         };
