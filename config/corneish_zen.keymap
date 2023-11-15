@@ -60,7 +60,7 @@
         &kp LSHFT       &kp Z           &kp X           &kp C           &kp V           &kp B               &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &kp RSHFT
     // ╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
                                                         // &kp LALT        &kp LCTRL       &lt NUM SPACE       &lt NAV RET     &kp BSPC        &kp LGUI
-                                                        &kp LALT        &kp LCTRL       &kp SPACE           &kp RET         &kp BSPC        &kp LGUI
+                                                        &kp LALT        &kp LCTRL       &lt NUM SPACE       &lt NAV RET     &kp BSPC        &kp LGUI
     //                                                 ╰───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────╯
             >;
         };
